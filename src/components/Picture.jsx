@@ -14,8 +14,8 @@ function Picture(props) {
         event.preventDefault();
     }
 
+    // Picture components resize themselves responsively in a grid to be viewed comfortably on desktop, tablet, or mobile
     return (
-
     <Grid item xs={12} md={6} lg={4} xl={3} sx={{mt: 1}}>
         <ImageListItem key={props.id}>
             <img

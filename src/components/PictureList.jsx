@@ -4,6 +4,7 @@ import ImageList from '@mui/material/ImageList';
 import Grid from '@mui/material/Grid';
 
 
+// Create Picture component based on data from API
 function createEntry(picture, index) {
     return <Picture 
         key={index}

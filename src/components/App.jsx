@@ -18,6 +18,7 @@ function App() {
     const [loading, setLoading] = useState(false)
     const [date, setDate] = React.useState(null);
 
+    // Loads an entire new set of pictures. Defaults to 10 random pictures if no date is specified, else it loads all pictures from the specified date
     function loadPictures() {
         setLoading(true);
 
@@ -38,7 +39,7 @@ function App() {
         return;
     }
 
-    // Add 5 more images to current set
+    // Loads 5 more images to current set
     function loadMore() {
         setLoading(true);
 
@@ -59,7 +60,6 @@ function App() {
         loadPictures();
     }, []);
 
-    // when data is available, title is shown
     return (
         <div>
             <Header />
